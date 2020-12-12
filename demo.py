@@ -74,9 +74,7 @@ def main(argv):
     save_dir = m1.save_model(sess, save_dir)
     #Instatiante basis model for optimizing EI criterion 
     m2 = BasisModel(dim_in=dim_inp, train_mode=False)
-    
-    
-    
+
     for iter in range(total_iters):
         
         x_train = np.reshape(x_train,(-1,dim_inp))
