@@ -16,11 +16,6 @@ gc.disable() #disable garbage collector
 
 logs_path = "tmp/debug"
 
-
-
-
-
-
 def main(argv):
     #default
     basis_training_epochs = 5000
@@ -33,7 +28,7 @@ def main(argv):
     bayes_beta = 4.0
     model_name = "nothingrn"
     acq_type = 'EI'
-    save_dir = "/home/anmol/projects/dngo/models/saved_models/"
+    save_dir = "models/saved_models/"
     X_dir = ('data/X.npy')
     y_dir = ('data/y.npy')
 
