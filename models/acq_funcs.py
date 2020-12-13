@@ -20,7 +20,7 @@ class acquisition_function():
         Z = tf.cast(Z,tf.float64)
         dist = tf.contrib.distributions.Normal(loc=0., scale=1.)
         '''
-        dist = tf.contrib.distributions.Normal(loc=tf.cast([0.],tf.float64), scale=tf.cast([1.],tf.float64))
+        dist = tf.contrib.distributions.Normal(mu=tf.cast([0.],tf.float64), sigma=tf.cast([1.],tf.float64))
         gamma_ = ( [min_val] - mu[0] )/(sigma[0])
         gamma = tf.cast(gamma_[0], tf.float64)
         
