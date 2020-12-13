@@ -10,6 +10,7 @@ for x in X:
 X = np.array(X)
 X = np.expand_dims(X, axis=1)
 Y = np.array(Y)
+Y = np.expand_dims(Y, axis=1)
 
 np.save("X.npy", X)
 np.save("y.npy", Y)
