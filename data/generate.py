@@ -12,10 +12,10 @@ X = np.expand_dims(X, axis=1)
 Y = np.array(Y)
 
 np.save("X.npy", X)
-np.save("Y.npy", Y)
+np.save("y.npy", Y)
 
 X = np.load("X.npy")
 print(X)
 
-Y = np.load("Y.npy")
+Y = np.load("y.npy")
 print(Y)
